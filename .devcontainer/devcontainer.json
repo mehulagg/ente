@@ -1,28 +1,20 @@
 {
     "name": "Flutter Development",
-    "image": "ubuntu:22.04",
+    "image": "ghcr.io/cirruslabs/flutter:stable",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": true,
             "configureZshAsDefaultShell": true,
             "installOhMyZsh": true
-        },
-        "ghcr.io/devcontainers/features/java:1": {
-            "version": "17",
-            "installMaven": false,
-            "installGradle": true
         }
     },
     "customizations": {
         "vscode": {
             "extensions": [
-                "Dart-Code.dart-code",
-                "Dart-Code.flutter",
-                "localizely.flutter-intl",
-                "dart-code.dart-code"
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "Dart-Code.flutter"
             ]
         }
-    },
-    "postCreateCommand": "bash ./.devcontainer/post-create.sh",
-    "remoteUser": "vscode"
+    }
 }
